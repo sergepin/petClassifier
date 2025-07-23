@@ -1,0 +1,31 @@
+# Virtual environment
+venv/
+*.env
+.env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+build/
+dist/
+.pytest_cache/
+.eggs/
+*.egg-info/
+
+# Django
+db.sqlite3
+/media/
+/static_root/
+
+# IDEs
+.vscode/
+.idea/
+
+#dataset
+/dataset/
+dataset/
+dataset
+/dataset/**/*

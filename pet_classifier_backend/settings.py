@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-r+wwisvg3f7ey9__g!^psh0tx40s1%g_(y)=wsi208r4e-1+t6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://petclassifier.zeabur.app/']
 
 
 # Application definition

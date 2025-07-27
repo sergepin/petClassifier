@@ -34,7 +34,7 @@ This project is a web API that:
 
 ### 1. Clone and setup
 ```bash
-git clone
+git clone https://github.com/sergepin/petClassifier.git
 cd petClassifier
 ```
 

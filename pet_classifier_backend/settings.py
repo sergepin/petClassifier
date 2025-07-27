@@ -25,7 +25,13 @@ SECRET_KEY = 'django-insecure-r+wwisvg3f7ey9__g!^psh0tx40s1%g_(y)=wsi208r4e-1+t6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://petclassifier.zeabur.app/','petclassifier.zeabur.app']
+ALLOWED_HOSTS = ['https://petclassifier.zeabur.app/',
+                 'petclassifier.zeabur.app',
+                 'localhost',
+                 '127.0.0.1',
+                 'http://localhost:3000',
+                 'http://127.0.0.1:3000',
+                 ]
 
 
 # Application definition
@@ -39,11 +45,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'prediction_api',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
